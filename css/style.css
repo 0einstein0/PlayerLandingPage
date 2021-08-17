@@ -520,7 +520,7 @@ hr{
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 500px) {
   body {
     padding-bottom: 40px;
     margin-top: -50px;

@@ -376,13 +376,15 @@ button {
   padding: 100px 0;
   padding-bottom: 60px;
   transition: all 1s;
+  overflow-x: scroll;
+  
 }
 
 .timeline ol li {
   position: relative;
   display: inline-block;
   list-style-type: none;
-  width: 7%;
+  width: 10%;
 
   height: 3px;
   background: rgba(185, 157, 32, 0.671);
@@ -395,17 +397,17 @@ button {
 
 .timeline ol li:not(:first-child) {
   
-  margin-left: 51px;
+  margin-left: 70px;
 }
 
 .timeline p {
    position: absolute;
    top: 50%;
-   left: calc(100% + 15px);
+   left: calc(100% + 18px);
    transform:translateY(-45%) ;
   color: rgb(255, 255, 255);
   text-shadow: 4px 4px 6px #1f1f1fc7;
-  font-size: medium;
+  font-size: 1.8rem;
 }
 
 .timeline ol li:not(:last-child)::before {
@@ -414,8 +416,8 @@ button {
   top: 50%;
   left: calc(100% + 1px);
   bottom: 0;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   transform: translateY(-50%);
   border-radius: 50%;
   background: #690a0a8c; /* fallback for old browsers */
@@ -432,13 +434,13 @@ button {
   box-shadow: 0 0 3px 3px rgba(31, 31, 31, 0.514);
 }
 
-.timeline img {
-  width: 100%;
- height: 50%;
-  border-radius: 10px;
-  box-shadow: 0 0 3px 3px rgba(27, 27, 27, 0.301);
-  z-index: 2;
+.timeline ol li:hover::before {
+
+  box-shadow: 4px 2px rgba(105, 81, 3, 0.616);
+
 }
+
+
 .timeline h6 {
   font-size: 0.7rem;
   text-align: left;
@@ -459,7 +461,7 @@ hr{
   overflow-y: scroll;
 }
 
-#blog1 , #blog2,#blog3, 
+ #blog1,#blog2,#blog3, 
 #blog4,#blog5, #blog6,
 #blog7, #blog8,#blog9, 
 #blog10, #blog11,#blog12{
@@ -477,8 +479,8 @@ hr{
 }
 
 .row{
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 22px;
+
 }
 
 .timeline li:hover  {
@@ -498,25 +500,6 @@ hr{
 /* TIMELINE ARROWS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline .arrows {
-  
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.timeline .arrows .arrow__prev {
-  margin-right: 20px;
-}
-
-.timeline .disabled {
-  opacity: .5;
-}
-
-.timeline .arrows svg {
-  width: 45px;
-  height: 45px;
- }
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -591,6 +574,9 @@ hr{
   height: 50px;
   z-index: 2;
 }
+
+
+
 ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -599,7 +585,8 @@ hr{
 
 ::-webkit-scrollbar
 {
-	width: 10px;
+  width: 10px;
+	
 	background-color: #18181893;
 }
 
@@ -614,4 +601,147 @@ hr{
 											  rgba(78, 78, 78, 0.397) 75%,
 											  transparent 75%,
 											  transparent)
+}
+
+
+
+
+.timeline ol::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	background-color: #25252500;
+}
+
+.timeline ol::-webkit-scrollbar
+{
+  width: 10px;
+	
+	background-color: #18181800;
+}
+
+.timeline ol::-webkit-scrollbar-thumb
+{
+	background-color: rgba(27, 27, 27, 0);	
+	background-image: -webkit-linear-gradient(45deg,
+	                    	  transparent 25%,
+											  transparent 50%,
+											  
+											  transparent 75%,
+											  transparent)
+}
+
+
+
+.post1004
+{
+  background-image: url('/assets/7.jpg');
+
+}
+.post2004{
+  background-image: url('/assets/2.jpg');
+
+}
+.post3004{
+  background-image: url('/assets/5a.jpg');
+
+}
+
+.post4004
+{
+  background-image: url('/assets/4.jpg');
+
+}
+.post5004{
+  background-image: url('/assets/3.jpeg');
+
+}
+.post6004{
+  background-image: url('/assets/6.jpg');
+
+}
+.card {
+  border-radius: 20px;
+  margin: 10px auto;
+ border: 0;
+  max-width: 100%;
+  min-height: 300px;
+  
+  overflow: hidden;
+  background-size: cover;
+}
+.card:hover{
+  box-shadow: 0 0 5px 5px #1d1d1dc0;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(7, 7, 7, 0.767);
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info:before {
+
+  display: block;
+  position: absolute;
+  content: ' ';
+  
+  overflow: hidden;
+  
+  background-size: cover;
+  opacity: 0.25;
+
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.title {
+  margin: 0;
+  padding: 24px;
+  font-size: 40px;
+  line-height: 1;
+  color: rgba(243, 243, 243, 0.87);
+}
+
+.card h6 {
+  margin: 0;
+  color:rgb(253, 253, 253);
+  text-align: center;
+  font-size: 13px;
+}
+
+
+
+
+
+
+@media (min-width:800px) {
+  h1 {
+    font-size: 4.236em;
+    font-weight: 300
+  }
+}
+
+p {
+  margin-bottom: 1.3em;
+  line-height: 1.618
+}
+
+@media (min-width:800px) {
+  p {
+    font-size: 1.3em
+  }
+}
+
+a {
+  color: #e03616;
+  text-decoration: none
 }

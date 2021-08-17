@@ -17,6 +17,7 @@
   function init() {
     setEqualHeights(elH);
     animateTl(xScrolling, arrows, timeline);
+    animateTl(xScrolling, ol, timeline);
     setSwipeFn(timeline, arrowPrev, arrowNext);
     setKeyboardFn(arrowPrev, arrowNext);
   }
@@ -141,4 +142,6 @@ function myFunction(id) {
   }
   
 }
+
+document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
 

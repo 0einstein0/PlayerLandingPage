@@ -121,12 +121,12 @@
 
 })();
 
-function myFunction(id) {
+function section1(id) {
   var x = document.getElementById(id);
   var y;
   var z;
   for (let i = 1; i < 13; i++) {
-    z = 'blog'+i;
+    z = 's1blog'+i;
     y = document.getElementById(z);
     if(y!==x){
       if (y.style.display === "block") {
@@ -143,5 +143,46 @@ function myFunction(id) {
   
 }
 
-document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+function section2(id) {
+  var x = document.getElementById(id);
+  var y;
+  var z;
+  for (let i = 1; i < 8; i++) {
+    z = 's2blog'+i;
+    y = document.getElementById(z);
+    if(y!==x){
+      if (y.style.display === "block") {
+        y.style.display = "none";
+      }
+    }
+  }
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.className = 'anim';
+  } else if (x.style.display = "block"){
+    x.style.display = "none";
+  }
+  
+}
 
+function section3(id) {
+  var x = document.getElementById(id);
+  var y;
+  var z;
+  for (let i = 1; i < 8; i++) {
+    z = 's3blog'+i;
+    y = document.getElementById(z);
+    if(y!==x){
+      if (y.style.display === "block") {
+        y.style.display = "none";
+      }
+    }
+  }
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.className = 'anim';
+  } else if (x.style.display = "block"){
+    x.style.display = "none";
+  }
+  
+}

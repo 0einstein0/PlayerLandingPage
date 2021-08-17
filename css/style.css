@@ -461,10 +461,18 @@ hr{
   overflow-y: scroll;
 }
 
- #blog1,#blog2,#blog3, 
-#blog4,#blog5, #blog6,
-#blog7, #blog8,#blog9, 
-#blog10, #blog11,#blog12{
+ #s1blog1,#s1blog2,#s1blog3, 
+#s1blog4,#s1blog5, #s1blog6,
+#s1blog7, #s1blog8,#s1blog9, 
+#s1blog10, #s1blog11,#s1blog12,
+#s2blog1,#s2blog2,#s2blog3, 
+#s2blog4,#s2blog5, #s2blog6,
+#s2blog7, #s2blog8,#s2blog9, 
+#s2blog10, #s2blog11,#s2blog12,
+#s3blog1,#s3blog2,#s3blog3, 
+#s3blog4,#s3blog5, #s3blog6,
+#s3blog7, #s3blog8,#s3blog9, 
+#s3blog10, #s3blog11,#s3blog12{
   display: none;
    position: relative;
    padding: 12px;
@@ -608,24 +616,26 @@ hr{
 
 .timeline ol::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-	background-color: #25252500;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #25252533;
 }
 
 .timeline ol::-webkit-scrollbar
 {
   width: 10px;
 	
-	background-color: #18181800;
+	background-color: #18181893;
 }
 
 .timeline ol::-webkit-scrollbar-thumb
 {
-	background-color: rgba(27, 27, 27, 0);	
+	background-color: rgba(27, 27, 27, 0.623);	
 	background-image: -webkit-linear-gradient(45deg,
-	                    	  transparent 25%,
+	                                          rgba(78, 78, 78, 0.397) 25%,
+											  transparent 25%,
 											  transparent 50%,
-											  
+											  rgba(78, 78, 78, 0.397) 50%,
+											  rgba(78, 78, 78, 0.397) 75%,
 											  transparent 75%,
 											  transparent)
 }

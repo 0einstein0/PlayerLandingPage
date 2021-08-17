@@ -65,7 +65,7 @@ input {
 label {
   display: block;
   float: left;
-  height: 104vh;
+  height: 100vh;
   width: 40px;
   overflow: hidden;
   background: #470b099a;
@@ -73,6 +73,7 @@ label {
   font-size: 30px;
   line-height: 50px;
   transition: background 300ms ease;
+  z-index: -1;
 }
 
 
@@ -221,8 +222,9 @@ li:nth-child(1):nth-last-child(5) input[type="radio"]:checked ~ .accslide p {
   -webkit-animation: bounceInDown 2s;
   animation: bounceInDown 2s;
 }
-li:nth-child(1):nth-last-child(5) input[type="radio"]:checked ~ .accslide  {
-  -webkit-animation: bounceInUp 2s;
+.anim
+{
+    -webkit-animation: bounceInUp 2s;
   animation: bounceInUp 2s;
 }
 
@@ -440,12 +442,18 @@ button {
 .timeline h6 {
   font-size: 0.7rem;
   text-align: left;
-  padding: 10% 0;
+  padding-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
   white-space: normal;
 }
+hr{
+  margin: 0;
+  padding: 2px;
 
+  width: 100%;
+  color: #c5a514;
+}
 .accslide{
   height: 100vh;
   overflow-y: scroll;
@@ -464,7 +472,7 @@ button {
   color: white;
    width: 90%;
   border-radius: 15px;
-  background: rgba(15, 15, 15, 0);
+  background: rgba(15, 15, 15, 0.363);
 
 }
 
@@ -578,7 +586,7 @@ button {
 }
 
 .footer{
-  margin-top: -20px;
+  margin-top: -30px;
   background-color: rgb(19, 19, 19);
   height: 50px;
   z-index: 2;

@@ -126,21 +126,19 @@ function myFunction(id) {
   var z;
   for (let i = 1; i < 13; i++) {
     z = 'blog'+i;
-    
     y = document.getElementById(z);
-    console.log(y)
     if(y!==x){
       if (y.style.display === "block") {
         y.style.display = "none";
-       
       }
     }
-
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+  }
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.className = 'anim';
+  } else if (x.style.display = "block"){
+    x.style.display = "none";
   }
   
 }
+
